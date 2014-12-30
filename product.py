@@ -214,6 +214,7 @@ class Product(osv.Model):
             ('bundle', 'Bundle'),
             ('virtual', 'Virtual'),
             ('downloadable', 'Downloadable'),
+            ('simpleticket', 'Simpleticket'),
         ], 'Magento Product type', readonly=True),
         magento_ids=fields.one2many(
             'magento.website.product', 'product',
